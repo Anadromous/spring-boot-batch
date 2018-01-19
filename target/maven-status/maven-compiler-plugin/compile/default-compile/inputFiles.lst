@@ -1,0 +1,8 @@
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\student\StudentController.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\csv\in\CsvFileToDatabaseCheckDataJobLauncher.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\student\RawBankCheckingData.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\common\LoggingCheckDataProcessor.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\SpringBatchExampleApplication.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\common\LoggingCheckDataWriter.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\csv\in\CsvFileToDatabaseCheckDataJobConfig.java
+C:\apps\spring-boot-batch\src\main\java\net\petrikainulainen\springbatch\student\StudentDTO.java

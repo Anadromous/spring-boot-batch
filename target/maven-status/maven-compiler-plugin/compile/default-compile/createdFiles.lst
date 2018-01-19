@@ -1,0 +1,8 @@
+net\petrikainulainen\springbatch\student\StudentController.class
+net\petrikainulainen\springbatch\student\RawBankCheckingData.class
+net\petrikainulainen\springbatch\student\StudentDTO.class
+net\petrikainulainen\springbatch\common\LoggingCheckDataWriter.class
+net\petrikainulainen\springbatch\SpringBatchExampleApplication.class
+net\petrikainulainen\springbatch\csv\in\CsvFileToDatabaseCheckDataJobConfig.class
+net\petrikainulainen\springbatch\common\LoggingCheckDataProcessor.class
+net\petrikainulainen\springbatch\csv\in\CsvFileToDatabaseCheckDataJobLauncher.class

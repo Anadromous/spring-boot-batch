@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * Contains the information of a single student who has purchased
  * the course.
  *
- * @author Petri Kainulainen
+ * @author Peter Chapman
  */
 @XmlRootElement(name="student")
 public class StudentDTO {
