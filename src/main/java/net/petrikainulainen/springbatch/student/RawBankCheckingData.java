@@ -3,18 +3,8 @@
  */
 package net.petrikainulainen.springbatch.student;
 
-import java.io.Serializable;
-import java.time.LocalDate;
+import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
@@ -25,8 +15,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class RawBankCheckingData {
 
 	private String transactionId; //Transaction ID
-	private LocalDate postingDate; //Posting Date	
-	private LocalDate effectiveDate; //Effective Date
+	private Date postingDate; //Posting Date	
+	private Date effectiveDate; //Effective Date
 	private String transactionType;//Transaction Type	
 	private Double amount; //Amount	
 	private Long checkNumber; //Check_Number
@@ -41,7 +31,7 @@ public class RawBankCheckingData {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public RawBankCheckingData(String transactionId, LocalDate postingDate, LocalDate effectiveDate, String transactionType, Double amount,
+	public RawBankCheckingData(String transactionId, Date postingDate, Date effectiveDate, String transactionType, Double amount,
 			Long checkNumber, String referenceNumber, String description, String transactionCategory, String type, Double balance) {
 		this.transactionId = transactionId;
 		this.postingDate = postingDate;
@@ -65,19 +55,19 @@ public class RawBankCheckingData {
 		this.transactionId = transactionId;
 	}
 
-	public LocalDate getPostingDate() {
+	public Date getPostingDate() {
 		return postingDate;
 	}
 
-	public void setPostingDate(LocalDate postingDate) {
+	public void setPostingDate(Date postingDate) {
 		this.postingDate = postingDate;
 	}
 
-	public LocalDate getEffectiveDate() {
+	public Date getEffectiveDate() {
 		return effectiveDate;
 	}
 
-	public void setEffectiveDate(LocalDate effectiveDate) {
+	public void setEffectiveDate(Date effectiveDate) {
 		this.effectiveDate = effectiveDate;
 	}
 

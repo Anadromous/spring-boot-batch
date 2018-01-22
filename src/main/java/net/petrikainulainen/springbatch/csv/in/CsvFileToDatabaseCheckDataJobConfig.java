@@ -41,7 +41,7 @@ import net.petrikainulainen.springbatch.student.RawBankCheckingData;
 public class CsvFileToDatabaseCheckDataJobConfig {
 	
 	private static final String PROPERTY_CSV_SOURCE_FILE_PATH = "csv.to.database.check.job.source.file.path";
-    private static final String QUERY_INSERT_RAW_DATA = "insert into raw_data (trans_id, posting_date, effective_date, trans_type, amount, check_number, "
+    private static final String QUERY_INSERT_RAW_DATA = "insert into raw_check_data (trans_id, posting_date, effective_date, trans_type, amount, check_number, "
     				+ "ref_number, description, trans_category, type, balance) "
     				+ "values (:transactionId, :postingDate, :effectiveDate, :transactionType, :amount, :checkNumber, "
     				+ ":referenceNumber, :description, :transactionCategory, :type, :balance);";
@@ -51,7 +51,6 @@ public class CsvFileToDatabaseCheckDataJobConfig {
         FlatFileItemReader<RawBankCheckingData> csvFileReader = new FlatFileItemReader<>();
         csvFileReader.setResource(new ClassPathResource(environment.getRequiredProperty(PROPERTY_CSV_SOURCE_FILE_PATH)));
         csvFileReader.setLinesToSkip(1);
-
         LineMapper<RawBankCheckingData> checkDataLineMapper = createCheckDataLineMapper();
         csvFileReader.setLineMapper(checkDataLineMapper);
 
